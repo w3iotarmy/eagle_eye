@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Used to Style the horizontal list of mission items.
+-->
+<TextView
+    android:id="@+id/timeView"
+    android:background="@drawable/ic_locator_button"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginEnd="2dp"
+    tools:text="00:10:59"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:drawableStart="@drawable/ic_locator_time"
+    android:drawableLeft="@drawable/ic_locator_time"
+    android:drawablePadding="5dp"
+    />

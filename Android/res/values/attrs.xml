@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadioButtonCenter">
+        <attr name="android:button" />
+    </declare-styleable>
+
+    <!-- Properties for org.droidplanner.android.widgets.spinners.SpinnerSelfSelect widget -->
+    <declare-styleable name="SpinnerSelfSelect">
+        <attr name="isSelectable" format="reference|boolean" />
+    </declare-styleable>
+
+    <!-- Attributes for the spinner wheel widgets -->
+    <declare-styleable name="AbstractWheelView">
+        <attr name="visibleItems" format="integer"/>
+        <attr name="isAllVisible" format="boolean"/>˛
+        <attr name="itemOffsetPercent" format="integer"/>
+        <attr name="itemsPadding" format="dimension"/>
+        <attr name="selectionDividerDimmedAlpha" format="integer"/>
+        <attr name="selectionDividerActiveAlpha" format="integer"/>
+        <attr name="selectionDivider" format="reference"/>
+        <attr name="itemsDimmedAlpha" format="integer"/>
+        <attr name="isCyclic" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="WheelHorizontalView">
+        <attr name="selectionDividerWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CardWheelHorizontalView">
+        <attr name="android:text" />
+        <attr name="android:orientation" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingDrawer">
+        <attr name="android:orientation" />
+        <attr name="handle" format="integer" />
+        <attr name="content" format="integer" />
+        <attr name="topOffset" format="dimension" />
+        <attr name="bottomOffset" format="dimension" />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TabPageIndicator" >
+        <attr name="android:textSize" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_connect"
+        app:showAsAction="never"
+        android:title="@string/menu_disconnect"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menu_sen_enable"
+        android:title="@string/menu_sensor_enable"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_sen_disable"
+        android:title="@string/menu_sensor_disable"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_save_drone"
+        android:title="@string/menu_save_drone"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_enable_pwm"
+        android:title="@string/menu_enable_pwm"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_enable_alt"
+        android:title="@string/menu_enable_atl"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/menu_enable_loiter"
+        android:title="@string/menu_enable_loiter"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/menu_open_control_dialog"
+        android:title="@string/menu_control_dialog"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/navigation_checklist"
+        android:icon="@drawable/ic_menu_checklist_grey600_24dp"
+        android:title="@string/screen_checklist"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_object_dect"
+        android:title="Object Dect"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_open_test"
+        android:title="@string/menu_upload" />
+    <item
+        android:id="@+id/menu_armed"
+        android:title="@string/menu_armed"/>
+    <item
+        android:id="@+id/menu_disarmed"
+        android:title="@string/menu_disarmed"/>
+    <item
+        android:id="@+id/menu_simple_takeoff_land"
+        android:title="@string/menu_takeoff_land"/>
+    <item
+        android:id="@+id/menu_simple_takeoff"
+        android:title="@string/menu_takeoff"/>
+    <item
+        android:id="@+id/menu_store_param"
+        android:title="@string/menu_pram_store"/>
+    <item
+        android:id="@+id/home_location"
+        android:title="@string/menu_home_location"/>
+    <item
+        android:id="@+id/menu_menual"
+        android:title="@string/menu_menual_oparate"/>
+    <item
+        android:id="@+id/menu_mode_guided"
+        android:title="Mode Guided"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_mode_stabilize"
+        android:title="Mode Stabilize"
+        android:visible="false"/>
+
+    <group
+        android:id="@+id/menu_group_connected"
+        android:enabled="false"
+        android:visible="false">
+        <item
+            android:id="@+id/menu_voice"
+            android:title="@string/menu_voice_title"/>
+
+
+        <item
+            android:id="@+id/menu_upload_mission"
+            app:showAsAction="never"
+            android:icon="@drawable/ic_cloud_upload_grey_700_24dp"
+            android:title="@string/upload_mission"/>
+        <item
+            android:id="@+id/menu_download_mission"
+            app:showAsAction="never"
+            android:icon="@drawable/ic_cloud_download_grey_700_24dp"
+            android:title="@string/download_mission"/>
+        <item
+            android:id="@+id/menu_kill_switch"
+            app:showAsAction="never"
+            android:enabled="false"
+            android:visible="false"
+            android:title="@string/menu_kill_switch"/>
+
+    </group>
+
+</menu>

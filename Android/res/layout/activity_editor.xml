@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <FrameLayout
+        android:id="@+id/editor_map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_gesture_map"/>
+
+    <org.droidplanner.android.view.FitsSystemWindowsRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+
+        <fragment
+            android:id="@+id/mission_tools_fragment"
+            android:name="org.droidplanner.android.fragments.account.editor.tool.EditorToolsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_editor_tools"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/button_my_location"
+            android:layout_alignLeft="@+id/mission_tools_fragment"
+            android:layout_alignStart="@+id/mission_tools_fragment"
+            android:layout_below="@+id/mission_tools_fragment"
+            android:layout_marginTop="4dp"
+            android:layout_alignWithParentIfMissing="true"/>
+
+        <TextView
+            android:id="@+id/editorInfoWindow"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            tools:text="@string/editor_info_window"
+            style="@style/editorMissionOverviewText"
+            android:visibility="visible"
+            android:gravity="end"
+            android:layout_above="@+id/actionbar_container"
+            android:layout_alignLeft="@+id/actionbar_container"
+            android:layout_alignStart="@+id/actionbar_container"
+            android:layout_alignRight="@+id/actionbar_container"
+            android:layout_alignEnd="@+id/actionbar_container"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            />
+
+        <include
+            layout="@layout/actionbar_toolbar"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/actionbar_container"
+            />
+    </org.droidplanner.android.view.FitsSystemWindowsRelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.grantland.widget.AutofitTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    tools:text="Sample"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:textColor="@android:color/black"
+    android:gravity="start|center_vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:drawablePadding="@dimen/info_bar_drawable_padding"
+    android:textSize="@dimen/info_bar_text_size" />
